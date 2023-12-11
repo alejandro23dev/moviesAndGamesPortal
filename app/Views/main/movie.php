@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <h1 class="mt-4"><?php echo $movie[0]->name; ?></h1>
+                            <h1 class="mt-4"><?php echo $movie[0]->name; ?><span> <i class="bi bi-badge-8k text-gra-500 fs-3"></i> <i class="bi bi-badge-4k text-gra-500 fs-3"></i> <i class="bi bi-badge-hd text-gra-500 fs-3"></i> <i class="bi bi-badge-sd text-gra-500 fs-3"></i></span></h1>
                             <p class="mt-4 text-gray-500">Publicada el <?php echo date('d M Y', strtotime($movie[0]->uploadDate)); ?> || hace <?php $movieDate = date('Y-m-d', strtotime($movie[0]->uploadDate));
                                                                                                                                                 $movieDateTime = new DateTime($movieDate);
                                                                                                                                                 $currentDateTime = new DateTime();
@@ -70,9 +70,9 @@
                                                                                                                                                 }; ?></p>
                             <p class="mt-4"><?php echo $movie[0]->description; ?></p>
                             <div class="mt-4 d-flex justify-content-start gap-2">
-                                <button class="btn btn-sm btn-secondary shadow rounded"><i class="bi bi-hand-thumbs-up"></i> Me gusta</button>
-                                <button class="btn btn-sm btn-secondary shadow rounded"><i class="bi bi-download"></i> Descargar</button>
-                                <button class="btn btn-sm btn-secondary shadow rounded"><i class="bi bi-chat-dots"></i> Comentar</button>
+                                <button class="btn btn-sm btn-secondary shadow rounded m-2 p-2"><i class="bi bi-hand-thumbs-up"></i> Me gusta</button>
+                                <button class="btn btn-sm btn-secondary shadow rounded m-2 p-2"><i class="bi bi-download"></i> Descargar</button>
+                                <button class="btn btn-sm btn-secondary shadow rounded m-2 p-2"><i class="bi bi-chat-dots"></i> Comentar</button>
                             </div>
                         </div>
                     </div>
